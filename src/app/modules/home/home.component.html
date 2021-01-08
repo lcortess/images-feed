@@ -1,10 +1,10 @@
 <h2 class="home__title">
-  Lorem Picsum API
+  Images Feed
 </h2>
 
-<div class="home__container">
+<div>
   <div class="home__image" *ngFor="let image of images">
-    <img [src]="image.download_url">
+    <img [attr.data-src]="image.download_url" appLazyImage>
   </div>
 </div>
 

@@ -1,3 +1,22 @@
 .home__title {
   text-align: center;
 }
+
+.home__image {
+  width: 24%;
+  padding: 3px;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+
+  img {
+    width: auto;
+    height: 100%;
+
+    &:not([src]) {
+      width: 100%;
+      background-color: lightgray;
+    }
+  }
+}
